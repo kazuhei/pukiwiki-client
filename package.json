@@ -1,0 +1,22 @@
+{
+  "name": "wiki-client",
+  "version": "0.1.0",
+  "description": "Pukiwiki Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kazuhei/pukiwiki-client.git"
+  },
+  "keywords": [
+    "pukiwiki"
+  ],
+  "author": "kazuhei <kazuhei0108@gmail.com> (https://github.com/kazuhei)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kazuhei/pukiwiki-client/issues"
+  },
+  "homepage": "https://github.com/kazuhei/pukiwiki-client"
+}
