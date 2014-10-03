@@ -1,0 +1,131 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.10
+3 info using node@v0.10.28
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/kazuhei_arai/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz
+13 verbose folder .
+14 info prepublish wiki-client@0.1.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/kazuhei_arai/.npm/1f1177db-tar.lock
+17 silly lockFile cc234176-546074-0-808460580650717-tmp-tgz tar:///var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz
+18 verbose lock tar:///var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz /Users/kazuhei_arai/.npm/cc234176-546074-0-808460580650717-tmp-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile cc234176-546074-0-808460580650717-tmp-tgz tar:///var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz
+22 silly lockFile cc234176-546074-0-808460580650717-tmp-tgz tar:///var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz
+23 verbose tar unpack /var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz
+24 silly lockFile 745eacf4-ai-npm-wiki-client-0-1-0-package tar:///Users/kazuhei_arai/.npm/wiki-client/0.1.0/package
+25 verbose lock tar:///Users/kazuhei_arai/.npm/wiki-client/0.1.0/package /Users/kazuhei_arai/.npm/745eacf4-ai-npm-wiki-client-0-1-0-package.lock
+26 silly lockFile cc234176-546074-0-808460580650717-tmp-tgz tar:///var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz
+27 verbose lock tar:///var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz /Users/kazuhei_arai/.npm/cc234176-546074-0-808460580650717-tmp-tgz.lock
+28 silly gunzTarPerm modes [ '755', '644' ]
+29 silly gunzTarPerm extractEntry package.json
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry index.coffee
+32 silly gunzTarPerm modified mode [ 'index.coffee', 436, 420 ]
+33 silly gunzTarPerm extractEntry lib/wiki.coffee
+34 silly gunzTarPerm modified mode [ 'lib/wiki.coffee', 436, 420 ]
+35 silly lockFile 745eacf4-ai-npm-wiki-client-0-1-0-package tar:///Users/kazuhei_arai/.npm/wiki-client/0.1.0/package
+36 silly lockFile 745eacf4-ai-npm-wiki-client-0-1-0-package tar:///Users/kazuhei_arai/.npm/wiki-client/0.1.0/package
+37 silly lockFile cc234176-546074-0-808460580650717-tmp-tgz tar:///var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz
+38 silly lockFile cc234176-546074-0-808460580650717-tmp-tgz tar:///var/folders/13/p_9tl5rd6qx9xwgwby6xbvqc4fs97_/T/npm-59586-yvEuEIwM/1412331546074-0.808460580650717/tmp.tgz
+39 silly lockFile 3a52ce78- .
+40 silly lockFile 3a52ce78- .
+41 silly publish { name: 'wiki-client',
+41 silly publish   version: '0.1.0',
+41 silly publish   description: 'Pukiwiki Client',
+41 silly publish   main: 'index.js',
+41 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+41 silly publish   repository:
+41 silly publish    { type: 'git',
+41 silly publish      url: 'https://github.com/kazuhei/pukiwiki-client.git' },
+41 silly publish   keywords: [ 'pukiwiki' ],
+41 silly publish   author:
+41 silly publish    { name: 'kazuhei',
+41 silly publish      email: 'kazuhei0108@gmail.com',
+41 silly publish      url: 'https://github.com/kazuhei' },
+41 silly publish   license: 'MIT',
+41 silly publish   bugs: { url: 'https://github.com/kazuhei/pukiwiki-client/issues' },
+41 silly publish   homepage: 'https://github.com/kazuhei/pukiwiki-client',
+41 silly publish   readme: 'pukiwiki-client\n===============\n\npukiwiki操作用のnpmモジュールです。\n',
+41 silly publish   readmeFilename: 'README.md',
+41 silly publish   _id: 'wiki-client@0.1.0',
+41 silly publish   _shasum: 'eca28d58b9cc13195db91f4677430054ac622466',
+41 silly publish   _from: '.' }
+42 verbose url raw wiki-client
+43 verbose url resolving [ 'https://registry.npmjs.org/', './wiki-client' ]
+44 verbose url resolved https://registry.npmjs.org/wiki-client
+45 info trying registry request attempt 1 at 19:19:06
+46 http PUT https://registry.npmjs.org/wiki-client
+47 http 403 https://registry.npmjs.org/wiki-client
+48 verbose headers { date: 'Fri, 03 Oct 2014 10:19:06 GMT',
+48 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+48 verbose headers   'content-type': 'application/json',
+48 verbose headers   'cache-control': 'max-age=60',
+48 verbose headers   'content-length': '2707',
+48 verbose headers   'accept-ranges': 'bytes',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   'x-served-by': 'cache-ty67-TYO',
+48 verbose headers   'x-cache': 'MISS',
+48 verbose headers   'x-cache-hits': '0',
+48 verbose headers   'x-timer': 'S1412331546.301238,VS0,VE445',
+48 verbose headers   'keep-alive': 'timeout=10, max=50',
+48 verbose headers   connection: 'Keep-Alive' }
+49 error publish Failed PUT 403
+50 error Error: forbidden user: kazuhei not authorized to modify wiki-client
+50 error Changed: description "Federated Wiki - Client-side Javascript" -> "Pukiwiki Client"
+50 error Changed: dist-tags.latest "0.2.12" -> "0.1.0"
+50 error Added: versions.0.1.0
+50 error Changed: readme "wiki-client\u000a===========\u000a\u000aFederated wiki client-side javascript as a npm module.\u000a\u000aGoals\u000a=====\u000a\u000aOver its first two years the Smallest Federated Wiki (SFW) project explored\u000amany ways that a wiki could embrace HTML5 and related technologies. Here\u000awe will cautiously reorganize this work as small independent modules that\u000afavor ongoing innovation.\u000a\u000aWe proceed by dividing SFW first into large pieces and then these into\u000asmaller pieces as we simplify and regularize the communications between them.\u000aWe now favor the node.js module and event conventions, dependency injection,\u000aand increased separation between the DOM and the logic that manages it.\u000a\u000aFederated wiki's single-page application reads page content from many sources\u000aand writes updates to a few. Read-write server backends are maintained in\u000aruby (sinatra) and node (express). Read-only servers have been realized\u000awith static files and cgi scripts. Encouraging experiments have exploited\u000aexotic service architectures such as CCNx content-addressable networks.\u000a\u000aParticipation\u000a=============\u000a\u000aWe're happy to take issues or pull requests regarding the goals and\u000atheir implementation within this code.\u000a\u000aA wider-ranging conversation is documented in the GitHub ReadMe of the\u000afounding project, [SFW](https://github.com/WardCunningham/Smallest-Federated-Wiki/blob/master/ReadMe.md).\u000a" -> "pukiwiki-client\u000a===============\u000a\u000apukiwiki操作用のnpmモジュールです。\u000a"
+50 error Changed: time.modified "2014-09-23T13:40:07.272Z" -> "2014-10-03T10:19:25.301Z"
+50 error Added: time.0.1.0
+50 error Changed: author.name "Ward Cunningham" -> "kazuhei"
+50 error Changed: author.email "ward@c2.com" -> "kazuhei0108@gmail.com"
+50 error Changed: author.url "http://ward.fed.wiki.org" -> "https://github.com/kazuhei"
+50 error Changed: repository.url "https://github.com/fedwiki/wiki-client" -> "https://github.com/kazuhei/pukiwiki-client.git"
+50 error Changed: keywords.0 "wiki" -> "pukiwiki"
+50 error Deleted: keywords.1
+50 error Deleted: keywords.2
+50 error Deleted: contributors
+50 error Changed: bugs.url "https://github.com/fedwiki/wiki-client/issues" -> "https://github.com/kazuhei/pukiwiki-client/issues"
+50 error Changed: homepage "https://github.com/fedwiki/wiki-client" -> "https://github.com/kazuhei/pukiwiki-client"
+50 error Added: _attachments: wiki-client
+50 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+50 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+50 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+50 error     at Request.EventEmitter.emit (events.js:98:17)
+50 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+50 error     at Request.EventEmitter.emit (events.js:117:20)
+50 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+50 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+50 error     at _stream_readable.js:919:16
+50 error     at process._tickCallback (node.js:419:13)
+51 error If you need help, you may report this *entire* log,
+51 error including the npm and node versions, at:
+51 error     <http://github.com/npm/npm/issues>
+52 error System Darwin 13.3.0
+53 error command "node" "/usr/local/bin/npm" "publish"
+54 error cwd /Users/kazuhei_arai/Documents/dwangoDev/shana_bot/node_modules/wiki-client
+55 error node -v v0.10.28
+56 error npm -v 1.4.10
+57 verbose exit [ 1, true ]
