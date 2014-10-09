@@ -1,13 +1,13 @@
 request = require('request')
 cheerio = require('cheerio')
 Wiki = (url)-> 
-	@url = url;
+    @url = url;
 
 Wiki.prototype.hello = () ->
     return 'hello ' + @url;
 
 Wiki.prototype.forge = (title, msg, callback) ->
-    request.get @url + 'index.php?cmd=edit&page=' + title
+    request.get @url + 'index.php?' + 'cmd=edit&page=' + encodeURIComponent(title)
         ,(err, res, body) =>
             $ = cheerio.load(body)
             parseDigest = $('*[name=digest]')
@@ -19,7 +19,7 @@ Wiki.prototype.forge = (title, msg, callback) ->
                     callback err, res, body, pageUrl
 
 Wiki.prototype.template = (title, callback) ->
-    request.get @url + 'index.php?cmd=edit&page=' + title
+    request.get @url + 'index.php?' + 'cmd=edit&page=' + encodeURIComponent(title)
         ,(err, res, body) =>
             $ = cheerio.load(body)
             parseTitle = $('*[name=page]')
@@ -53,13 +53,12 @@ Wiki.prototype.update = (title, msg, digest, ticket, callback) ->
             pageUrl = Wiki.prototype.pageUrl.call @, 'edit', title
             callback err, res, body, pageUrl
 
-
 Wiki.prototype.pageUrl = (cmd, title) ->
     if not cmd
         cmd = 'read'
-    pageUrl = @url + 'index.php?' 
+    pageUrl = @url + 'index.php?'
     pageUrl += 'cmd=' + cmd
-    pageUrl += '&page=' + title
+    pageUrl += '&page=' + encodeURIComponent(title)
 
 if exports 
     exports.Wiki = Wiki;
