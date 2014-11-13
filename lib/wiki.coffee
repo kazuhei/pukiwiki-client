@@ -34,6 +34,13 @@ Wiki.prototype.template = (title, callback) ->
                 , (err, res, body, pageUrl) ->
                     callback err, res, body, pageUrl
 
+Wiki.prototype.getTemplateValue = (pageTitle, callBack) ->
+    request.get @url + 'index.php?cmd=edit&page=' + encodeURIComponent("#{pageTitle}/template")
+      , (err, res, body) =>
+        $ = cheerio.load(body)
+        value = $('#msg').val()
+        callBack err, res, value
+
 Wiki.prototype.update = (title, msg, digest, ticket, callback) ->
     options =
         uri: @url + 'index.php',
@@ -50,7 +57,7 @@ Wiki.prototype.update = (title, msg, digest, ticket, callback) ->
     
     request.post options
         , (err, res, body) =>
-            pageUrl = Wiki.prototype.pageUrl.call @, 'edit', title
+            pageUrl = Wiki.prototype.pageUrl.call @, 'read', title
             callback err, res, body, pageUrl
 
 Wiki.prototype.pageUrl = (cmd, title) ->
